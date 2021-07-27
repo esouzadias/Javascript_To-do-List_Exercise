@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100%;
+}
+
+* body .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  background-color: #f0f0f0;
+}
+
+* body .page .sidebar .sidebar-content {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+  border-radius: 20px;
+}
+
+* body .page .sidebar .sidebar-content header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+  height: 70px;
+  -webkit-box-shadow: 10px -10px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px -10px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+* body .page .sidebar .sidebar-content .fa-arrow-alt-circle-right {
+  /* margin: 100px 0px 0px 0; */
+  color: #bfbfff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+* body .page .sidebar .sidebar-content .fa-arrow-alt-circle-right:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+* body .page .sidebar .sidebar-content .fa-home {
+  color: #bfbfff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  /* margin-top: 70px */
+}
+
+* body .page .sidebar .sidebar-content .fa-home:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+* body .page .sidebar .sidebar-content .fa-user {
+  color: #bfbfff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  /* margin-top: 70px */
+}
+
+* body .page .sidebar .sidebar-content .fa-user:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+* body .page .sidebar .sidebar-content .fa-cog {
+  color: #bfbfff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  /* margin-top: 70px */
+}
+
+* body .page .sidebar .sidebar-content .fa-cog:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+* body .page .dashboard {
+  width: 100%;
+}
+
+* body .page .dashboard header {
+  text-align: center;
+  font-size: larger;
+  width: 100%;
+  background-color: #dfdfdf;
+  padding: 10px 0;
+  color: white;
+}
+
+* body .page .dashboard header .todo-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15px;
+}
+
+* body .page .dashboard header .todo-bar span {
+  -webkit-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* body .page .dashboard header .todo-bar span input {
+  padding: 0.5rem;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 2rem;
+}
+
+* body .page .dashboard header .todo-bar span input:focus {
+  outline: none !important;
+}
+
+* body .page .dashboard header .todo-bar span button {
+  padding: 0px 20px;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+}
+
+* body .page .dashboard header .todo-bar span button i {
+  font-size: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+* body .page .dashboard header .todo-bar span button i:hover {
+  color: #9d9dff;
+  cursor: pointer;
+}
+
+* body .page .dashboard .todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+* body .page .dashboard .todo-container .todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+* body .page .dashboard .todo-container .todo .fa-trash, * body .page .dashboard .todo-container .todo .fa-check {
+  pointer-events: none;
+}
+
+* body .page .dashboard .todo-container .todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+* body .page .dashboard .todo-container .todo .todo-item {
+  padding: 0rem 0.8rem;
+  font-size: 30px;
+}
+
+* body .page .dashboard .todo-container .todo .trash-btn, * body .page .dashboard .todo-container .todo .complete-btn {
+  background-color: #bfbfff;
+  color: white;
+  border: none;
+  padding: 1.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+* body .page .dashboard .todo-container .todo .trash-btn:hover, * body .page .dashboard .todo-container .todo .complete-btn:hover {
+  background-color: #8484ff;
+}
+
+* body .page .dashboard .todo-container .todo .trash-btn {
+  background-color: red;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+* body .page .dashboard .todo-container .todo .trash-btn:hover {
+  background-color: #f00000;
+}
+
+* body .page .dashboard .todo-container .todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+* body .page .dashboard .todo-container .todo-list .completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+* body .page .dashboard .todo-container .todo-list .delete {
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */

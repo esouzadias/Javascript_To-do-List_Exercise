@@ -1,0 +1,179 @@
+@mixin sidebar-icons {
+    color: #bfbfff;
+    transition: 0.2s;
+    &:hover {
+        cursor: pointer;
+        opacity: 50%;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        min-height: 100%;
+        .page{
+            display: flex;
+            width: 100%;
+            min-height: 100%;
+            background-color: rgb(240, 240, 240);
+
+            .sidebar{
+                .sidebar-content {  
+                    background-color: white;
+                    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+                    height: 100%;
+                    width: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-bottom: 50px;
+                    border-radius: 20px;
+                    header{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 10px 0;
+                        width: 100%;
+                        height: 70px;
+                        box-shadow: 10px -10px 15px 0px rgba(0,0,0,0.3);
+                    }
+                    .fa-arrow-alt-circle-right {
+                        /* margin: 100px 0px 0px 0; */
+                        @include sidebar-icons();
+                    }
+                    .fa-home {
+                        @include sidebar-icons();
+                        /* margin-top: 70px */
+                    }
+                    .fa-user {
+                        @include sidebar-icons();
+                        /* margin-top: 70px */
+                    }  
+                    .fa-cog{
+                        @include sidebar-icons();
+                        /* margin-top: 70px */
+                    }    
+                }
+            }
+            
+            .dashboard{
+                width: 100%;
+                header{
+                    text-align: center;
+                    font-size: larger;
+                    width: 100%;
+                    background-color: #dfdfdf;
+                    padding: 10px 0;
+                    color: white;              
+                    .todo-bar{
+                        display: flex;
+                        align-items: center;  
+                        justify-content: center; 
+                        padding: 0 15px;
+                        
+                        span{
+                            box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.1);
+                            display: flex;
+                            input{
+                                padding: 0.5rem;
+                                border:  none;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                                font-size: 2rem;
+                                &:focus{
+                                    outline: none !important;
+                                }  
+                            }
+                            button{
+                                padding: 0px 20px;
+                                border: none;
+                                border-top-right-radius: 20px;
+                                border-bottom-right-radius: 20px;
+                                background-color: white;
+                                i{
+                                    font-size: 30px;                     
+                                    transition: 0.2s;
+                                    &:hover{
+                                        color: #9d9dff;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                            
+                        } 
+                          
+                    }
+                }
+                .todo-container{
+                    display: flex; 
+                    justify-content: center;
+                    margin-top:50px;  
+
+                    .todo{
+                        display: flex;
+                        margin: 10px 0;
+                        justify-content: space-between;
+                        align-items: center;
+                        list-style: none;
+                        border-radius: 20px;
+                        background-color: white;
+                        box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.1);
+                        transition: all .5s ease;
+                        .fa-trash, .fa-check{
+                            pointer-events: none;
+                        }
+                        li{
+                            flex: 1;       
+                        }
+                        .todo-item{
+                            padding: 0rem 0.8rem;
+                            font-size: 30px;
+                        }
+                        .trash-btn, .complete-btn{
+                            background-color: #bfbfff;
+                            color: white;
+                            border: none;
+                            padding: 1.5rem;
+                            cursor: pointer;
+                            font-size: 1.5rem;
+                            &:hover{
+                                background-color: #8484ff;
+                            }
+                        }
+                        .trash-btn{
+                            background-color: red;
+                            border-top-right-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                            &:hover{
+                                background-color: rgb(240, 0, 0);
+                            }
+                        }  
+                    }
+                    
+                    .todo-list{
+                        min-width: 30%;
+                        list-style: none;
+                        
+                        .completed{
+                            text-decoration: line-through;
+                            opacity: 0.5;
+                        }
+    
+                        .delete{
+                            transform: translateY(8rem) rotateZ(20deg);
+                            opacity: 0;
+                        }
+                    }
+                    
+                }     
+            }
+        }
+    }   
+}
+
